@@ -1,14 +1,39 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Blood Donation App
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
+<ion-content class="red_base">
+  <!-- The world is your oyster.
   <p>
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  </p> -->
+  <div>
+    <ion-card-header style="text-align:center;font-family:'Nunito Sans';color:white;font-size:25px;">
+      Donate Blood 
+    </ion-card-header>
+      <img style="display:block;margin-left:auto;margin-right:auto;width: 150px; height:auto" src="../../assets/imgs/blood.JPG">
+    <ion-card-header style="text-align:center;font-family:'Nunito Sans';color:white;font-size:25px;">
+      Save Life
+    </ion-card-header>
+  </div>
+  <ion-footer>
+      <ion-list style="margin-bottom:0px">
+        <ion-item (click)="openNewRegistration()" style="font-family:'Nunito Sans';color:#F87880;font-size:20px">
+          <ion-icon name="add-circle" item-end></ion-icon>
+          New Register
+        </ion-item>
+        <ion-item style="font-family:'Nunito Sans';color:#F87880;font-size:20px">
+            <ion-icon name="search" item-end></ion-icon>
+          Search
+        </ion-item>
+        <ion-item style="font-family:'Nunito Sans';color:#F87880;font-size:20px">
+            <ion-icon name="create" item-end></ion-icon>
+          Edit
+        </ion-item>
+      </ion-list>
+  </ion-footer>
 </ion-content>
